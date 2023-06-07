@@ -350,6 +350,31 @@ cursor: pointer;
     transform-origin: right;
   }
 
+
+.clients{
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+
+  }
+  .exp, .sold, .employees{
+    border-left: thick solid #ff0000;
+    padding-left: 3%;
+  }
+
+  .exp h1::after{
+    content: '+';
+  }
+  .sold h1::after{
+    content: 'K+';
+  }
+  .employees h1::after{
+    content: '+';
+  }
 @media(max-width: 800px) and (min-width: 0px) {
     .page1{
         background-image: none;
